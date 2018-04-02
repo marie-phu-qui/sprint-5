@@ -22,5 +22,23 @@ for(var number = 1; number <= 100; number++){
         console.log(number);
     }
 }
-
 // CHESS BOARD
+var charOne = '_';
+var charTwo = '#';
+var board = '';
+
+for (i=0 ; i<size ; i++) {
+	for (j=0 ; j<size ; j++){
+        if ((j+i)%2 == 0){
+            board += charOne;
+            }
+        else {
+            board += charTwo;
+        }
+    }
+      board += '\n';
+}
+
+console.log(board);
+
+var size = 8;
